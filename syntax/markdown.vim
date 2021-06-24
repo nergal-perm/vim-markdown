@@ -115,8 +115,7 @@ syn region mkdNonListItemBlock start="\(\%^\(\s*\([-*+]\|\d\+\.\)\s\+\)\@!\|\n\(
 syn match  mkdRule         /^\s*\*\s\{0,1}\*\s\{0,1}\*\(\*\|\s\)*$/
 syn match  mkdRule         /^\s*-\s\{0,1}-\s\{0,1}-\(-\|\s\)*$/
 syn match  mkdRule         /^\s*_\s\{0,1}_\s\{0,1}_\(_\|\s\)*$/
-syn match  mkdFileLink /\[\[\d\{12}\]\]/
-syn match  mkdFileLink /\[\[\d\{12}:.\{-}\]\]/ 
+syn region mkdFileLink start="\[\[" end="\]\]"
 syn match  mkdAnchor   /^@[-0-9a-z]*$/
 syn match  mkdAnchor   /^@[-0-9a-z]*:.*$/
 
